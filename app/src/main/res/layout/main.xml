@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerAd"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        />
+    <LinearLayout
+        android:id="@+id/btnsLayout"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:weightSum="2"
+        android:layout_above="@id/bannerAd"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:background="@color/colorPrimary"
+            android:text="Generate SMS NOW"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Reset" />
+    </LinearLayout>
+    <com.google.android.gms.ads.NativeExpressAdView
+        android:id="@+id/nativeAdView"
+        android:layout_above="@id/btnsLayout"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="360x132"
+        ads:adUnitId="@string/native_ad_unit_id"
+        >
+    </com.google.android.gms.ads.NativeExpressAdView>
+    <LinearLayout
+        android:id="@+id/dateTimeLayout"
+        android:layout_width="match_parent"
+        android:layout_above="@id/nativeAdView"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/datePickBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+
+            android:background="@color/colorPrimary"
+            android:onClick="showDatePicker"
+            android:text="Mon, 5 Jan 1970"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/timePickBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="showTimePicker"
+            android:text="6:31 AM"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/folderLayout"
+        android:layout_width="match_parent"
+        android:layout_above="@id/dateTimeLayout"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="SMS Destination: "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/numLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="85">
+
+            <EditText
+                android:id="@+id/tnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/num_hint"
+                android:inputType="textPersonName" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="15"
+            android:background="@color/white"
+            android:contentDescription="Pick a Contact"
+            android:onClick="pickContactClicked"
+            app:srcCompat="@drawable/ic_account" />
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_body"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/numLayout"
+        android:layout_above="@id/folderLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/tbody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/msg_hint"
+            android:inputType="textMultiLine"
+            android:maxLines="6"
+            android:minLines="6" />
+
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+
+        android:layout_above="@id/bannerAd"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

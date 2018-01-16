@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#03a9f4</color>
+    <color name="colorPrimaryDark">#0288d1</color>
+    <color name="colorAccent">#03a9f4</color>
+    <color name="primary_text">#3c3c3c</color>
+    <color name="secondary_text">#FFFFFA</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="iconcolor">#555555</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="buttonsucess">#4caf50</color>
+    <color name="headinggreen">#8bc34a</color>
+    <color name="headingorange">#ff9800</color>
+    <color name="progressgreen">#4caf50</color>
+    <color name="progressBlue">#03a9f4</color>
+    <color name="progessred">#f44336</color>
+    <color name="badgecolor">#cc1313</color>
+    <color name="black">#000000</color>
+
+</resources>
