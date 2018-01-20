@@ -1,0 +1,7 @@
+#Sat Jan 20 16:21:27 PKT 2018
+base.0=E\:\\Private\\Fakesms-master1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_930ed50204230b05d0d851142c323823b47c6bbe
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=E\:\\Private\\Fakesms-master1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_110a53f42b89f754308614a841c55848a0481a8e\\classes.dex
+base.1=E\:\\Private\\Fakesms-master1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_110a53f42b89f754308614a841c55848a0481a8e
+file.0=E\:\\Private\\Fakesms-master1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_930ed50204230b05d0d851142c323823b47c6bbe\\classes.dex

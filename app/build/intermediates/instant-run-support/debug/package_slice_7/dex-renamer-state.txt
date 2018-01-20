@@ -1,0 +1,4 @@
+#Sat Jan 20 01:32:24 PKT 2018
+base.0=E\:\\Private\\Fakesms-master1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_7
+renamed.0=classes.dex
+file.0=E\:\\Private\\Fakesms-master1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_7\\classes.dex

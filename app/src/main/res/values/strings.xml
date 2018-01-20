@@ -4,13 +4,13 @@
     <string name="num_hint"><font size="19">Sender Phone Number / Name</font></string>
     <string name="msg_hint"><font size="19">Message</font></string>
 
-    <!--<string name="banner_ad_unit_id">ca-app-pub-6557142062270167/1141187635</string>-->
+    <string name="banner_ad_unit_id">ca-app-pub-6557142062270167/1141187635</string>
 
     <!--Test Ad Banner-->
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
 
-    <!--<string name="native_ad_unit_id">ca-app-pub-6557142062270167/2617920837</string>-->
+    <string name="native_ad_unit_id">ca-app-pub-6557142062270167/2617920837</string>
 
     <!--Test Ad Native-->
-    <string name="native_ad_unit_id">ca-app-pub-3940256099942544/2793859312</string>
+    <!--<string name="native_ad_unit_id">ca-app-pub-3940256099942544/2793859312</string>-->
 </resources>

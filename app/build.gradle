@@ -8,8 +8,8 @@ android {
         applicationId "com.sizzling.apps.fakesms"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 5
+        versionName "1.0.4"
         vectorDrawables.useSupportLibrary true
     }
 
